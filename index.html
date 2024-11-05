@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#127874; Happy Birthday Aidaa Wohoooo &#127874; </title>
+    <style>
+        body {
+            font-family: Copperplate, Papyrus, fantasy;
+            margin: 0;
+            padding: 0;
+            background-color: #FFD0F3;
+            background: url('images2/birthday-background-2.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .pictures-word {
+            border: 2px solid #FF4DFC;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 5px;
+            color: #FFEBFD;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.5s, color 0.5s;
+            font-size: 30px;
+        }
+        .pictures-word:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        header {
+            background: url('images/birthday-background.jpg');
+            background-size: cover;
+            width: 100%;
+            color: #000000;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Brush Script MT', cursive;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-size: 125%;
+            background: url('images-gallery/pngtree-cartoon-creative-happy-birthday-poster-picture-image_1050830.jpg') no-repeat center;
+            font-size: 30px;
+            font-family: Copperplate, Papyrus, fantasy;
+            text-align: center;
+            justify-content: space-between;
+        }
+        footer {
+            text-align: center;
+            background: #BFE0FF;
+            color: #000000;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 30px;
+            background: url('images/birthday-background.jpg');
+            background-size: cover;
+        }
+        .cake-image {
+            margin: 20px; 
+            max-width: 400px; 
+            display: block; 
+        }
+        .flex-container {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin: 20px 0; 
+        }
+        .images-gallery {
+            display: flex; 
+            flex-direction: column; /* Stack images vertically */
+            justify-content: center; 
+            margin: 0 20px; 
+        }
+        .images-gallery img {
+            width: 300px; 
+            height: auto; 
+            margin: 10px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        .right-gif {
+            max-width: 100px; /* Set a max width for the GIF */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 350px; /* Add space between content and GIF */
+            position: absolute;
+            top: 380px;
+            max-width: 200px;
+        }
+		 .play-button {
+            background-color: cyan; /* Change this to your desired color */
+            color: black; /* Text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Padding for the button */
+            font-size: 20px; /* Font size */
+            cursor: pointer; /* Change cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+			font-family: Copperplate, Papyrus, fantasy;
+			height: 50px;
+        }
+
+        .play-button:hover {
+            background-color: #007BFF; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Happy Birthday To Aidaa 祝你生日快乐 &#127874;</h1>
+</header>
+
+<!-- Add a button to play audio with the new class -->
+<button class="play-button" onclick="playAudio()">&#127874; Play Birthday Song Here ! &#127874;</button>
+
+<!-- Audio tag without muted -->
+<audio id="background-audio" preload="auto">
+    <source src="audio/song.MP3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2>
+    Click here to see more surprises <a href="https://sylyann.github.io/testingwebsite/" class="pictures-word">&#128512; &#127874;</a> !
+</h2>
+
+<div class="container">
+    <h2>The words I want to wish for you</h2>
+    <p>Happy Birthday To You! &#127874; &#127873;</p>
+    <p class="chinese-text">祝你生日快乐 身体健康 天天开心 &#127881;</p>
+    <img src="images-gallery/hbd.gif" alt="Cute Gif" class="right-gif">
+    
+    <div class="flex-container">
+        <div class="images-gallery">
+            <img src="images-gallery/happy-birthday-card-concept-cute-600nw-2291447925.webp" alt="Birthday Card 1">
+            <img src="images-gallery/happy-purfect-birthday-greeting-card-260nw-2135593383.jpg" alt="Birthday Card 2">
+        </div>
+        
+        <img src="images3/cake-image.png" alt="Birthday Cake" class="cake-image">
+        
+        <div class="images-gallery">
+            <img src="images-gallery/happy-birthday-card-concept-cute-600nw-2291447925.webp" alt="Birthday Card 3">
+            <img src="images-gallery/happy-purfect-birthday-greeting-card-260nw-2135593383.jpg" alt="Birthday Card 4">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p> &#127874; &#128049; &#127873; Wishing You A Great Birthday &#127874; &#128049; &#127873;</p>
+</footer>
+
+<script>
+    function playAudio() {
+        const audio = document.getElementById('background-audio');
+        audio.play().catch(error => {
+            console.log("Playback failed:", error);
+        });
+    }
+
+    function showAlert() {
+        alert('Remember to be happy always!');
+    }
+</script>
+
+</body>
+</html>
